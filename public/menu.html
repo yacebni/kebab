@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix du menu</title>
+    <link rel="stylesheet" href="stylemenu.css"> 
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Accueil</a></h1>
+    </header>
+
+    <main>
+      <form id="grid" method="post" action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug">
+        <div id="entête">
+            <h2> Choix de la taille du menu</h2> 
+        </div>
+        
+          <div id="Taille">
+
+            <table>
+              <tr>    
+                <td>
+                  <div>
+                    <input type="radio" id="seul" name="Menu" value="Seul">
+                    <label for="seul">Kebab Seul (5€50)</label>
+                  </div>
+                  <p>Un kebab seul une ou plusieurs viandes au choix</p>
+                </td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>    
+                <td>
+                  <div>
+                    <input type="radio" id="medium" name="Menu" value="Medium">
+                    <label for="medium">Menu Medium (7€)</label>
+                  </div>
+                  <p>Un kebab une viande avec une petite barquette de frites et une boisson au choix sur place</p> 
+              </td>
+            </tr>
+          </table>
+
+          <table>
+            <tr>    
+              <td>
+                <div>
+                  <input type="radio" id="large" name="Menu" value="Large">
+                  <label for="large">Menu Large (8€)</label>
+                </div>
+                <p>Un kebab deux viandes avec une grande barquette de frites et une boisson au choix sur place</p> 
+              </td>
+            </tr>
+          </table>
+
+          <table>
+            <tr>    
+              <td>
+                <div>
+                  <input type="radio" id="xlarge" name="Menu" value="X-Large">
+                  <label for="xlarge">Menu X-Large (10€)</label>
+                </div>
+                <p>Un kebab deux viandes avec une grande barquette de frites, une boisson et un dessert au choix sur place </p> 
+
+              </td>
+            </tr>
+          </table>
+          </div>
+        
+
+        <div id="entête2">
+            <h2> Configuration du menu</h2> 
+        </div>
+          
+          <div id="formulaire">
+  
+            <div id="Regime">
+              <p>Régime particulier</p>
+              <div>
+                <input type="radio" id="végétarien" name="Régime" value="végétarien">
+                <label for="végétarien">Végétarien</label>
+              </div>
+              <div>
+                <input type="radio" id="Halal" name="Régime" value="Halal">
+                <label for="Halal">Halal</label>
+              </div>
+              <div>
+                <input type="radio" id="Sans_Viande" name="Régime" value="Sans_Viande">
+                <label for="Sans_Viande">Sans viande</label>
+              </div>
+              <div>
+                <input type="radio" id="Kasher" name="Régime" value="Kasher">
+                <label for="Kasher">Kasher</label>
+              </div>
+              <div>
+                <input type="radio" id="Aucun" name="Régime" value="Aucun">
+                <label for="Aucun">Aucun</label>
+              </div>
+            </div>
+  
+  
+            <div id="Crudités">
+              <p>Choisissez vos crudités</p>
+              <div>
+                <input type="checkbox" id="Salades" name="crudité" value="Salades">
+                <label for="Salades">Salades</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Tomates" name="crudité" value="Tomates">
+                <label for="Tomates">Tomates</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Oigons" name="crudité" value="Oigons">
+                <label for="Oigons">Oigons</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Cornichons" name="crudité" value="Cornichons">
+                <label for="Cornichons">Cornichons</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Sans_crudité" name="crudité" value="Sans_crudité">
+                <label for="Sans_crudité">Sans crudité</label>
+              </div>
+            </div>
+  
+            <div id="Boisson">
+              <p>Choisissez votre boisson</p>
+              <div>
+                <input type="radio" id="gazeuze" name="boisson" value="gazeuze">
+                <label for="gazeuze">Gazeuze (choix sur place)</label>
+              </div>
+              <div>
+                <input type="radio" id="Eau" name="boisson" value="Eau">
+                <label for="Eau">Eau</label>
+              </div>
+                <div>
+                <input type="radio" id="Sans_Gaz" name="boisson" value="Sans_Gaz">
+                <label for="Sans_Gaz">Sans Gaz (choix sur place)</label>
+              </div>
+            </div>
+
+            <div id="Sauce">
+              <p>Choisissez votre sauce</p>
+              <div>
+                <input type="radio" id="ketchup" name="sauce" value="ketchup">
+                <label for="ketchup">Ketchup</label>
+              </div>
+              <div>
+                <input type="radio" id="mayonnaise" name="sauce" value="mayonnaise">
+                <label for="mayonnaise">Mayonnaise</label>
+              </div>
+              <div>
+                <input type="radio" id="blanche" name="sauce" value="blanche">
+                <label for="blanche">Blanche</label>
+              </div>
+              <div>
+                <input type="radio" id="algérienne" name="sauce" value="algérienne">
+                <label for="algérienne">Algérienne</label>
+              </div>
+              <div>
+                <input type="radio" id="fromagère" name="sauce" value="fromagère">
+                <label for="fromagère">Sauce fromagère</label>
+              </div>
+              <div>
+                <input type="radio" id="sans_sauce" name="sauce" value="sans_sauce">
+                <label for="sans_sauce">Sans sauce</label>
+              </div>
+            </div>
+  
+            <div id="Suppléments">
+              <p>Choisissez vos suppléments</p>
+              <div>
+                <input type="checkbox" id="dessert" name="suppléments" value="Dessert">
+                <label for="dessert">Desserts (choix sur place)</label>
+              </div>
+              <div>
+                <input type="checkbox" id="boisson" name="suppléments" value="boisson">
+                <label for="boisson">Boisson (choix sur place)</label>
+              </div>
+              <div>
+                <input type="checkbox" id="viande" name="suppléments" value="viande">
+                <label for="viande">Viande (+ 0.50€)</label>
+              </div>
+              <div>
+                <input type="checkbox" id="sauce" name="suppléments" value="sauce">
+                <label for="sauce">Sauce (choix sur place)</label>
+              </div>
+            </div>
+          </div>
+          <div id="button">
+            <button>
+              Valider la commande
+            </button>
+        </div>
+        </form>
+    </main>       
+
+   
+    <footer>
+      <a href="fin.html">Qui sommes-nous ?</a>
+      © Fast-Food de l'IUT. Crée avec &#9829; par Yacine et Anis
+    </footer>
+</body>
+</html>

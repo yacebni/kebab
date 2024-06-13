@@ -1,0 +1,356 @@
+
+    body {
+        display: flex;
+        width: 100%;
+        flex-direction: column; 
+        justify-content: space-between; 
+        background-color: black;
+        margin: 0; 
+    }
+    
+    header{
+        display: grid;
+        text-align: left;
+        width: 100%;  
+        height: 55em;
+        background-color: black;
+        color: white;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-image: url(images/vraikebab.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    main {
+        display: grid;
+        row-gap: 10px;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: auto auto 1fr 1fr ;
+    }
+
+    #menu {
+        display: grid;
+        text-align: center;
+        grid-area: 2/2/3/2;
+        background-color: orange;
+        border-radius: 10%;
+        height: 5em;
+        width: 15em;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+    
+    #menu a
+    {
+        color: black;
+        text-decoration: none;
+    }
+
+    #bienvenue
+    {
+        display: grid;
+        background-color: grey;
+        text-align: center;
+        width: 100%;
+        font-family: "Blackout";
+        font-size: 55px;
+        height: auto;
+        
+    }
+
+    #text {
+        color: white;
+        grid-area: 1/1/2/4 ;
+        text-align: center;
+        width: auto;
+    }
+
+    #service {
+        grid-area: 2/1/3/4;
+        background-color: gray;
+        text-align: center;
+    }
+    
+
+    #logos {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #logos img {
+        width: auto;
+        height: 100px;
+    }
+
+    #titres {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #logos2 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #logos2 img {
+        width: auto;
+        height: 100px;
+    }
+
+    #titres2 {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #carte {
+        grid-area: 3/1/4/4;
+        text-align: center;
+        height: auto;
+        width: auto;
+        color: white;
+    }
+
+    #horaires {
+        grid-area: 4/2/5/3;
+        text-align: center;
+        width: 100%;
+        display: grid;
+        
+    }
+    figcaption > p img {
+        width: 50px;
+        height: 50px;
+    }
+    
+
+    caption {
+        font-weight: bold;
+    }
+    
+    #horaires > table {
+
+        text-align: center;
+        color: white;
+    }
+
+    tr:nth-child(2n) {
+        background-color: grey;
+        color: black;
+    }
+    
+    #infoactu {
+        grid-area: 5/2/6/3;
+        text-align: center;
+        color: white;
+    }
+
+    #info {
+        border-right: 1px solid white;
+        grid-area: 1/1/2/2;
+        padding-right: 20px;
+    }
+
+    #actu {
+        padding-left: 20px;
+    }
+    
+    #infoactu > table > tr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    
+    td, th, tr {
+        padding: 5px 5px 5px 5px;
+    }
+    
+    tr {
+        margin-top: 5px;
+    }
+    
+    #paiement img {
+        width: 150px;
+        height: auto;
+        margin: 10px;
+    }
+
+    #paiement {
+        grid-area: 7/1/9/4;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color: grey;
+    }
+
+    #paiement h2 {
+        font-family: "Blackout";
+    }
+
+    footer {
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+
+    footer a
+    {
+        color: white;
+    }
+
+
+
+
+@media (max-width: 850px){
+    header{
+        display: grid;
+        text-align: left;
+        width: 100%; 
+        height: 22em; 
+        background-color: black;
+        color: white;
+        background-image: url(images/vraikebab.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #menu {
+        display: grid;
+        text-align: center;
+        grid-area: 2/2/3/2;
+        background-color: orange;
+        border-radius: 5%;
+        height: 5em;
+        width: 15em;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+
+    #menu a
+    {
+        color: black;
+        text-decoration: none;
+    }
+
+    #bienvenue
+    {
+        background-color: grey;
+        text-align: center;
+        width: 100%;
+        font-family: "Blackout";
+        font-size: 40px;
+        height: 3em;
+        
+    }
+
+    #horaires {
+        grid-area: 5/2/6/3;
+        text-align: center;
+        width: 100%;
+        display: grid;
+        
+    }
+    
+    #carte {
+        text-align: center;
+        height: auto;
+        width: auto;
+        color: white;
+    }
+    
+    body {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between; 
+        margin: 0; 
+    }
+    
+    #horaires > table {
+        text-align: center;
+    }
+    
+    #horaires td {
+        border: 1px solid black;
+    }
+    
+    #infoactu > table > tr {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #infoactu {
+        text-align: center;
+    }
+    
+    #infoactu > table > tr {
+        display: flex;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    footer {
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+    
+    td, th, tr {
+        padding: 5px 5px 5px 5px;
+    }
+    
+    tr {
+        margin-top: 5px;
+    }
+    
+    caption {
+        font-weight: bold;
+    }
+    
+    #paiement img 
+    
+    {
+        font-family: "Blackout";
+        width: 20%;
+    }
+    #paiement
+    {
+        background-color: grey;
+        width: auto;
+    }
+
+    #paiement h1
+    {
+        text-align: center;
+        font-family: "Blackout";
+
+    }
+
+    figure > img {
+        height: 65%;
+        width: 65%;
+    }
+
+    #service img {
+        width: 20%;
+        height: 20%;
+    }
+
+    #logos {
+        display: flex;
+    }
+
+    img {
+        margin: auto;
+    }
+
+
+}

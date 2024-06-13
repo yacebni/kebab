@@ -1,0 +1,240 @@
+header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;  
+    height: 6em;
+    color: white;
+    background-image: url(images/banniere.jpg);
+    background-size: contain;
+}
+
+body {
+    display: grid;
+    background-color: rgb(2, 2, 26);
+    margin: 0;
+    background-image: url(images/ouvrir-un-kebab-grand.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+
+#entête {
+    grid-area: 1/1/2/5;
+    background-color: grey;
+    text-align: center;
+    height: 3em;
+    font-size: 30px;
+    font-family: "Blackout";
+    width: 100%;
+}
+
+#entête2 {
+    grid-area: 3/1/4/5;
+    background-color: grey;
+    text-align: center;
+    height: 3em;
+    font-size: 30px;
+    font-family: "Blackout";
+    width: 100%;
+}
+
+#Taille {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-area: 2/1/3/5;
+    text-align: center;
+}
+
+
+h2 {
+    grid-area: 1/1/2/5;
+    font-size: xx-large;
+}
+
+form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    
+}
+
+footer {
+    text-align: center;
+    background-color: grey;
+    grid-area: 4/1/5/2;
+    width: 100%;
+}
+
+table{
+    height: 100%;
+    width: 90%;
+    color: white;
+}
+
+td > div {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+#formulaire{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-content: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+    grid-area: 4/1/5/6;
+    color: white;
+    text-align: left;
+    margin: 15px;
+}
+
+#formulaire section {
+    margin-bottom: 15px;
+}
+
+
+#button {
+    grid-area: 7/1/8/4;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    height: 100%;
+    width: 50%;
+    font-size: large;
+    background-color: rgb(40, 5, 97);
+    color: white;
+
+}
+
+main {
+    text-align: left;
+}
+
+legend {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    margin: 4px 4px 4px 4px;
+    align-content: space-between;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+label:hover {
+    color: cyan;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: purple;
+}
+
+div {
+    align-content: space-around;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: black;
+}
+
+@media (max-width: 850px) {
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;;
+    }
+
+    #formulaire {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        background-image: url(images/ouvrir-un-kebab-grand.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }  
+
+    #formulaire section {
+        justify-content: center;
+    }
+
+
+    table{
+        border-spacing: 5px;
+        height: 10%;
+        width: 25%;
+        
+    }
+
+    #Taille {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-around;
+        background-image: url(images/ouvrir-un-kebab-grand.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    button {
+
+        height: 100%;
+        width: 100%;
+        margin: 10px 10px 10px 10px;
+        font-size: large;
+        background-color: rgb(40, 5, 97);
+        color: white;
+        
+    }
+
+    footer {
+        text-align: center;
+        background-color: grey;
+        grid-area: 5/1/6/2;
+        width: 100%;
+    }
+
+    legend {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    body {
+        background-color: rgb(2, 2, 26);
+        background-image: none;
+        margin: 0;
+        margin-right: 0;
+    }
+
+    #entête {
+        width: 100%;
+        height: auto;
+    }
+    
+}
